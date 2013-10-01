@@ -1,0 +1,9 @@
+Rope_Attach.png)
+	The rope_attach.png file is what it sound slike.  this is where the rope attaches to a wall.
+
+Stairs.png)
+The stairs.png file is meant to be assembled in a way you want it to look.
+i.e. if you want 3 steps on the stairs, put the stair.png files together.
+
+Magic_Saw.png and Moving_Plat.png)
+why magic?  well for one, that was what i was told, and two, i think it adds a little bit of diversity. also, looks cool. 8D
