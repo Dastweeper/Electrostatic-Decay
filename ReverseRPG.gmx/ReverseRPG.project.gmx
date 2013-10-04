@@ -8,6 +8,11 @@
   <sprites name="sprites">
     <sprite>sprites\garyRight</sprite>
     <sprite>sprites\ground</sprite>
+    <sprite>sprites\spr_sword</sprite>
+    <sprite>sprites\spr_enemyTest</sprite>
+    <sprite>sprites\spr_healthTest</sprite>
+    <sprite>sprites\spr_bow</sprite>
+    <sprite>sprites\spr_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\brick</background>
@@ -17,6 +22,11 @@
     <object>objects\obj_platform</object>
     <object>objects\player</object>
     <object>objects\par_platform</object>
+    <object>objects\obj_sword</object>
+    <object>objects\obj_enemyTest</object>
+    <object>objects\par_weapon</object>
+    <object>objects\obj_bow</object>
+    <object>objects\obj_arrow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
