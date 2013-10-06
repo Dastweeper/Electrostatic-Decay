@@ -1,0 +1,8 @@
+Hey guys got most of the collision detection working.
+There are two types of platform objects (platform, boundary)
+Platforms the player can jump through and land on them.
+Boundaries are rectangles the player cannot pass through.
+Keep motivated we can do this.
+for some inspiration here are some links to two awesome games made with game maker.
+http://spelunkyworld.com/original.html
+http://www.capcom-unity.com/mega_man
