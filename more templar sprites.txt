@@ -1,0 +1,9 @@
+Request for Nathan, our beloved Artiste
+=======================================
+I think the following versions of the templar sprite would be helpful:
+
+Standing Mode (done)
+Walking Mode
+Stabbing Mode
+Blocking Mode
+Jumping Mode
