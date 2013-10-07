@@ -10,23 +10,30 @@
     <sprite>sprites\ground</sprite>
     <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_enemyTest</sprite>
-    <sprite>sprites\spr_healthTest</sprite>
-    <sprite>sprites\spr_bow</sprite>
-    <sprite>sprites\spr_arrow</sprite>
+    <sprite>sprites\spr_Rope_Swing</sprite>
+    <sprites name="Weapons">
+      <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_bow</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\brick</background>
+    <background>background\bg_Rock_BG_1</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_platform</object>
     <object>objects\player</object>
     <object>objects\par_platform</object>
-    <object>objects\obj_sword</object>
     <object>objects\obj_enemyTest</object>
-    <object>objects\par_weapon</object>
-    <object>objects\obj_bow</object>
-    <object>objects\obj_arrow</object>
+    <objects name="Rope Swing">
+      <object>objects\obj_Rope_Swing</object>
+    </objects>
+    <objects name="weapons">
+      <object>objects\obj_arrow</object>
+      <object>objects\obj_bow</object>
+      <object>objects\par_weapon</object>
+      <object>objects\obj_sword</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
