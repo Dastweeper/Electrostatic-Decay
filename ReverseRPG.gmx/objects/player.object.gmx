@@ -25,13 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///variables
-
-hsp = 0;
+            <string>hsp = 0;
 vsp = 0;
 grav = 0.5;
 grounded = 0;
-     
 </string>
           </argument>
         </arguments>
@@ -54,8 +51,7 @@ grounded = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///movement code / ground collision
-key_left = keyboard_check_direct(vk_left);
+            <string>key_left = keyboard_check_direct(vk_left);
 key_right = keyboard_check_direct(vk_right);
 key_jump = keyboard_check_direct(vk_space);
 
@@ -84,9 +80,9 @@ if(key_jump)
 
 vsp += grav;
 
-if place_meeting(x, y+vsp, obj_Static_Parent)
+if place_meeting(x, y+vsp, par_platform)
 {
-    while(!place_meeting(x, y+1, obj_Static_Parent)) y+=1;
+    while(!place_meeting(x, y+1, par_platform)) y+=1;
     vsp = 0;
     grounded = 1
 }
@@ -95,9 +91,9 @@ else
     grounded = 0;
 }
 
-if place_meeting(x+hsp, y, obj_Static_Parent)
+if place_meeting(x+hsp, y, par_platform)
 {
-    while(!place_meeting(x+sign(hsp), y, obj_Static_Parent)) x+=sign(hsp);
+    while(!place_meeting(x+sign(hsp), y, par_platform)) x+=sign(hsp);
     hsp = 0;
 }
 

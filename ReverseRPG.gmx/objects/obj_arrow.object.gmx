@@ -64,18 +64,18 @@ destroy = false;
             <string>//add gravity to the vertical speed
 vsp += grav;
 //If about to touch the ground
-if place_meeting(x, y+vsp, obj_Static_Parent)
+if place_meeting(x, y+vsp, par_platform)
 {
     //Move next to the ground and stop
-    while(!place_meeting(x, y+1, obj_Static_Parent)) y+=1;
+    while(!place_meeting(x, y+1, par_platform)) y+=1;
     vsp = 0;
     grounded = true;
 }
 //If a wall is hit
-else if place_meeting(x+hsp, y, obj_Static_Parent)
+else if place_meeting(x+hsp, y, par_platform)
 {
     //Move next to the wall and stop
-    while(!place_meeting(x+sign(1), y, obj_Static_Parent)) x+=sign(hsp);
+    while(!place_meeting(x+sign(1), y, par_platform)) x+=sign(hsp);
     vsp = 0;
     grounded = true;
 }
@@ -126,7 +126,7 @@ if(grounded = 1){
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>1</PhysicsObjectShape>
+  <PhysicsObjectShape>0</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
@@ -136,9 +136,7 @@ if(grounded = 1){
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,-1</point>
-    <point>20,-1</point>
-    <point>20,7</point>
-    <point>0,7</point>
+    <point>10,3</point>
+    <point>10,10</point>
   </PhysicsShapePoints>
 </object>
