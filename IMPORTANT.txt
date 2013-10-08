@@ -1,5 +1,0 @@
-When you submit/commit a file to this repository...give it a unique name. Michael accidentally overrote Ryan's work I believe.
-
-So, please, make sure you Rename the project folder before you commit it.
-
-And Ryan, please resubmit your work.
