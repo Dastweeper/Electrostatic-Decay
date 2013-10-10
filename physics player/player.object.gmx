@@ -165,7 +165,7 @@ if(collision_line(x-23, y+31,x+19,y+31, par_boundary, true, false) == boundcolli
             vsp = -10;
     }
 }
-/*//stops vertical speed if bottom of player collides with a boundary
+/*stops vertical speed if bottom of player collides with a boundary
 if(collision_line(x-19, y+32+vsp, x+19, y+32+vsp, par_boundary,true, false) != noone)
 {
     while(collision_line(x-19, y+33, x+19, y+33, par_boundary,true, false) == noone)
