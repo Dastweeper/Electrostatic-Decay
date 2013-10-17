@@ -167,6 +167,17 @@ add = 0;
     x = player.x + xrel;
     y = player.y + yrel;
 }
+else{
+    //Reset the sword angle and stop attacking
+    visible = false;
+    image_angle = 0;
+    slash = false;
+    spin = false;
+    attacking = false;
+    stab = false;
+    count = 0;
+    xrel = 0;
+}
 </string>
           </argument>
         </arguments>

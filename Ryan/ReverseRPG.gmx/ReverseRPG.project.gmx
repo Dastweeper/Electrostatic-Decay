@@ -15,6 +15,8 @@
       <sprite>sprites\spr_arrow</sprite>
       <sprite>sprites\spr_bow</sprite>
     </sprites>
+    <sprite>sprites\spr_Box</sprite>
+    <sprite>sprites\SPR_Player</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Rock_BG_1</background>
@@ -22,7 +24,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_platform</object>
-    <object>objects\player</object>
+    <object>objects\player_old</object>
     <object>objects\par_platform</object>
     <object>objects\obj_enemyTest</object>
     <objects name="Rope Swing">
@@ -34,6 +36,10 @@
       <object>objects\par_weapon</object>
       <object>objects\obj_sword</object>
     </objects>
+    <object>objects\obj_Box</object>
+    <object>objects\obj_boundary</object>
+    <object>objects\par_boundary</object>
+    <object>objects\player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
