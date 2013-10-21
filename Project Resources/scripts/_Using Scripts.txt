@@ -1,0 +1,12 @@
+If you want to see the code for yourself, open the .gml files in notepad or (preferrably) notepad++
+
+STEPS:
+
+1. Put the .gml files into your Game Maker Project's "scripts" folder
+2. Call the script like you would any method, include the appropriate parameters
+3. Look at the first line of the .gml file for list of parameters (it will be a comment, but don't change it; game maker uses it)
+
+GENERIC EXAMPLE:
+
+//calling a script
+scriptFunction(param1,param2);
