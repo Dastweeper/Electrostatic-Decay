@@ -3,18 +3,11 @@ Electrostatic-Decay
 Here is where we will be doing our game.
 /COMMUNITY MESSAGE BOARD/
 -------------------------
-When you submit/commit a file to this repository...give it a unique name. Michael accidentally overrote Ryan's work I believe.
-
-So, please, make sure you Rename the project folder before you commit it.
-
-And Ryan, please resubmit your work.
+ANNOUNCEMENT: Programmers (Nelson, Jon, Michael, Ryan) we should meet this Sunday to put together the elements we've been working on into a coherent and single level.
 
 
 We will do 30fps, as I think that should work for the really small scope that we're going for. -Steven
 
-Maybe we should consider branching. Right now we have 5 versions of the project, each with their owner saying "no touchie." That's cool, but let's number them, or we can branch.
-Branching is basically what we're doing anyways.
--Steven
 --------------------------
 
 
