@@ -30,8 +30,6 @@ hsp = 0;
 vsp = 0;
 grav = 0.5;
 grounded = 1;
-
-
 </string>
           </argument>
         </arguments>
@@ -109,6 +107,14 @@ if(key_right)
     hsp = 5;
     image_xscale = 1;
 }
+
+if(place_meeting(x+hsp, y, obj_Box))
+{
+    while(!place_meeting(x+sign(hsp), y, obj_Box)) x+=sign(hsp);
+    hsp = hsp / 2;
+}
+
+
 //if both direction keys are pressed the there is no movement
 if(key_left &amp;&amp; key_right) or (!key_left &amp;&amp; !key_right)
 {

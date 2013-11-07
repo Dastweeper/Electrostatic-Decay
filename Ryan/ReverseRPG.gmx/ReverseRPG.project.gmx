@@ -23,6 +23,9 @@
     <background>background\bg_Rock_BG_1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_platform</object>
     <object>objects\player_old</object>
@@ -32,10 +35,12 @@
       <object>objects\obj_Rope_Swing</object>
     </objects>
     <objects name="weapons">
-      <object>objects\obj_arrow</object>
-      <object>objects\obj_bow</object>
-      <object>objects\par_weapon</object>
-      <object>objects\obj_sword</object>
+      <objects name="Player">
+        <object>objects\obj_sword</object>
+        <object>objects\par_weapon</object>
+        <object>objects\obj_bow</object>
+        <object>objects\obj_arrow</object>
+      </objects>
     </objects>
     <object>objects\obj_boundary</object>
     <object>objects\par_boundary</object>
