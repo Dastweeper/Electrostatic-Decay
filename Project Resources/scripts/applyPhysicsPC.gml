@@ -1,15 +1,10 @@
-//applyPhysicsPC(sp,spring,vsp,hsp,grounded,time,check)
+//applyPhysicsPC(sp,spring)
 //
 //This script applies the game's laws of physics to the player object. This is meant to be called in the "Step".
 
 //Matching arguments to variables
 sp = argument0;
 spring = argument1;
-vsp = argument2;
-hsp = argument3;
-grounded = argument4;
-time = argument5;
-check = argument6;
 
 //Get our inputs
 moveLeft    =   keyboard_check_direct(vk_left);
@@ -63,9 +58,9 @@ if (grounded == 1)
 vsp++;
 
 //Vertical Collision
-if place_meeting(x,y+vsp,par_wall) 
+if place_meeting(x,y+vsp,par_floor) || place_meeting(x,y+vsp,par_wall)
 {
-    while (!place_meeting(x,y+1,par_wall)) 
+    while ( !place_meeting(x,y+1,par_floor) && !place_meeting(x,y+vsp,par_wall) ) 
     { y+=1; }
     vsp = 0;
     grounded = true;

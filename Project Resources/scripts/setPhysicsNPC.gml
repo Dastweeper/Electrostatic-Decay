@@ -13,3 +13,7 @@ check = true;
 moveLeft    =   false
 moveRight   =   true
 moveJump    =   false
+
+//Misc. Variables
+endPatrol = false;
+los = 300;
