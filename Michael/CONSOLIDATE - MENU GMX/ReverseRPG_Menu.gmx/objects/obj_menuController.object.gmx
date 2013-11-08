@@ -49,22 +49,15 @@
           <argument>
             <kind>1</kind>
             <string>///menu controller
-/*
-framesShown++;
-if(framesShown%room_speed==0) show_debug_message(string_format(paused,10,2));
-*/
-
 
 //Used to toggle the pause menu
 if (keyboard_check_released(vk_escape)){
     if(paused==true){
         paused=false;
         room_goto(1);       //go back to the game room
-        //show_debug_message(paused);
     }else{
         paused=true;
         room_goto(2);       //go to the menu/pause room
-        //show_debug_message(paused);
     }
 }
 //need to add options menu
