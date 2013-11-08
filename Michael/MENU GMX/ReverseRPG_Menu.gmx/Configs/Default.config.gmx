@@ -109,7 +109,7 @@
     <option_in_app_purchase_sandbox_mode>0</option_in_app_purchase_sandbox_mode>
     <option_in_app_purchase_server_url></option_in_app_purchase_server_url>
     <option_information></option_information>
-    <option_interpolate>False</option_interpolate>
+    <option_interpolate>True</option_interpolate>
     <option_ios_adcolony_enable_V4VC>0</option_ios_adcolony_enable_V4VC>
     <option_ios_advertising_enable>0</option_ios_advertising_enable>
     <option_ios_advertising_key></option_ios_advertising_key>
@@ -173,7 +173,7 @@
     <option_mac_enable_steam>0</option_mac_enable_steam>
     <option_mac_fullscreen>0</option_mac_fullscreen>
     <option_mac_icon_png>Configs\Default\mac\icon512.png</option_mac_icon_png>
-    <option_mac_interpolate>0</option_mac_interpolate>
+    <option_mac_interpolate>-1</option_mac_interpolate>
     <option_mac_major_version>1</option_mac_major_version>
     <option_mac_menu_dock>0</option_mac_menu_dock>
     <option_mac_minor_version>0</option_mac_minor_version>
@@ -202,7 +202,7 @@
     <option_showprogress>1</option_showprogress>
     <option_sizeable>False</option_sizeable>
     <option_stayontop>false</option_stayontop>
-    <option_sync_vertex>1</option_sync_vertex>
+    <option_sync_vertex>2147483648</option_sync_vertex>
     <option_textureGroup0_border>2</option_textureGroup0_border>
     <option_textureGroup0_nocropping>0</option_textureGroup0_nocropping>
     <option_textureGroup0_parent>&lt;none&gt;</option_textureGroup0_parent>
