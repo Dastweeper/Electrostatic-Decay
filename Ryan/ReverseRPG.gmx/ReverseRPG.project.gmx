@@ -25,6 +25,12 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\script0.gml</script>
+    <script>scripts\applyPhysicsNPC.gml</script>
+    <script>scripts\applyPhysicsPC.gml</script>
+    <script>scripts\followPlayer.gml</script>
+    <script>scripts\patrol.gml</script>
+    <script>scripts\setPhysicsNPC.gml</script>
+    <script>scripts\setPhysicsPC.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_platform</object>
@@ -38,8 +44,14 @@
       <objects name="Player">
         <object>objects\obj_sword</object>
         <object>objects\par_weapon</object>
-        <object>objects\obj_bow</object>
         <object>objects\obj_arrow</object>
+        <object>objects\obj_bow</object>
+      </objects>
+      <objects name="Enemies">
+        <object>objects\obj_sword_e</object>
+        <object>objects\par_weapon_e</object>
+        <object>objects\obj_arrow_e</object>
+        <object>objects\obj_bow_e</object>
       </objects>
     </objects>
     <object>objects\obj_boundary</object>

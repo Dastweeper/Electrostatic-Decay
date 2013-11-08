@@ -32,6 +32,36 @@ health1 = 20;
 
 //Can the enemy be hit?
 take_damage = true;
+setPhysicsNPC();
+weapon = instance_create(x, y, obj_bow_e);
+weapon.enemy = id;
+//The enemies attack var makes it fire an arrow/stab
+//The enemies attack2 var makes it slash (sword only)
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Weapon Testing vars
+///The weapons testing script will couse the sword to stabe every 10th frame
+
+counttest = 0;
 </string>
           </argument>
         </arguments>
@@ -54,7 +84,11 @@ take_damage = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!place_meeting(x, y, obj_sword)){
+            <string>followPlayer();
+patrol();
+applyPhysicsNPC(3, 1);
+
+if(!place_meeting(x, y, obj_sword)){
     take_damage = true;
 }
 
@@ -76,7 +110,41 @@ if(place_meeting(x+3, y, obj_arrow) || place_meeting(x-3, y, obj_arrow)){
 
 //if health = 0, die
 if(health1 == 0){
+    //deetroy its weapon and itself
+    with (weapon) instance_destroy();
     instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Weapons Testing
+///Cause the enemy to attack every 10th frame
+
+
+
+if(counttest &gt;= 10){
+    weapon.attack = true;
+    counttest = 0;
+}
+else{
+    counttest ++;
 }
 </string>
           </argument>

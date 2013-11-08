@@ -30,6 +30,8 @@ hsp = 0;
 vsp = 0;
 grav = 0.5;
 grounded = 1;
+
+setPhysicsPC();
 </string>
           </argument>
         </arguments>
@@ -81,7 +83,9 @@ for (i = 0; i &lt; gamepad_get_device_count(); i++)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(gamepad_is_connected(slot) == true)
+            <string>applyPhysicsPC(4,10);
+/*
+if(gamepad_is_connected(slot) == true)
 {
     key_left = gamepad_button_check(slot, gp_padl);
     key_right = gamepad_button_check(slot, gp_padr);
@@ -122,7 +126,7 @@ if(key_left &amp;&amp; key_right) or (!key_left &amp;&amp; !key_right)
 }
 
 
-
+/*
 //gradually adds gravity to jumps
 vsp += grav;
 

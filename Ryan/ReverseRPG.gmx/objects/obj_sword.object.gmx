@@ -92,7 +92,7 @@ add = 0;
             visible = true;
             attacking = true;
             slash = true;
-        if(player.grounded){
+        /*if(player.grounded){
             //Make the sword verticle
             image_angle = 90 * dir;
             //Move the sword forward a bit
@@ -102,7 +102,11 @@ add = 0;
             attacking = true;
             image_angle = 90;
             spin = true;
-        }
+        }*/
+        //If above commented
+        image_angle = 90 * dir;
+        //Move the sword forward a bit
+        xrel = 15 * dir;
     }
     
     //Stab Function
